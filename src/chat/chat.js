@@ -6,6 +6,7 @@ const renderChat = (config) => {
     innerContainer.classList.add("vanilla-chatbot-kit-chat-inner-container")
     innerContainer.appendChild(createHeaders(config))
     innerContainer.appendChild(createMessageContainer())
+    innerContainer.appendChild(createForm())
 
     chatContainer.appendChild(innerContainer)
 
@@ -37,10 +38,20 @@ const createForm = () => {
     input.classList.add("vanilla-chatbot-kit-chat-input")
     input.placeholder = "Write your message here";
 
-    const button = document.createElement("button");
-    button.classList.add("vanilla-chatbot-kit-chat-btn-send")
+    const btn = document.createElement("button");
+    btn.classList.add("vanilla-chatbot-kit-chat-btn-send")
 
-    
+    const img = document.createElement("img");
+    img.src = "/assets/images/paper-plane.svg";
+    img.alt = "send icon"
+    img.classList.add("vanilla-chatbot-kit-chat-btn-send-icon")
+
+    btn.appendChild(img)
+    form.appendChild(input)
+    form.appendChild(btn)
+    container.appendChild(form)
+
+    return container
 }
 
 export default renderChat; 
