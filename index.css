@@ -82,10 +82,13 @@ p{
     background: #2898ec;
     border:none;
     border-bottom-right-radius: 5px;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
 }
 .vanilla-chatbot-kit-chat-btn-send-icon{
     fill: #fff;
     width: 25px;
+    padding: 0 5px 0 0;
 }
 
 
