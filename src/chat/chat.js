@@ -7,6 +7,7 @@ const renderChat = (config) => {
     innerContainer.appendChild(createHeaders(config))
     innerContainer.appendChild(createMessageContainer())
     innerContainer.appendChild(createForm())
+    // innerContainer.appendChild(createUserChatMessage())
 
     chatContainer.appendChild(innerContainer)
 
@@ -23,6 +24,9 @@ const createHeaders = (config) =>{
 const createMessageContainer = () =>{
     const container = document.createElement("div")
     container.classList.add("vanilla-chatbot-kit-chat-message-container")
+
+    const userMessage = createUserChatMessage("Hello World!")
+    container.appendChild(userMessage);
 
     return container;
 }
@@ -53,5 +57,40 @@ const createForm = () => {
 
     return container
 }
+
+const createUserChatMessage = (message) => {
+    const container = document.createElement('div')
+    container.classList.add("vanilla-chatbot-kit-user-chat-message-container")
+    
+    const avatarContainer = document.createElement('div')
+    avatarContainer.classList.add("vanilla-chatbot-kit-user-avatar-container")
+
+    const img = document.createElement("img");
+    img.src = "/assets/images/user-avatar.svg";
+    img.alt = "User Avatar"
+    img.classList.add("vanilla-chatbot-kit-user-avatar-icon");
+
+    const messageContainer = document.createElement("div");
+    messageContainer.classList.add("vanilla-chatbot-kit-user-chat-message")
+    messageContainer.textContent = message;
+
+    const arrow = document.createElement("div");
+    arrow.classList.add("vanilla-chatbot-kit-user-chat-message-arrow")
+
+    messageContainer.appendChild(arrow)
+    avatarContainer.appendChild(img)
+
+    container.appendChild(messageContainer)
+    container.appendChild(avatarContainer)
+
+    return container;
+}
+
+
+
+const createBotChatMessage = () => {
+
+}
+
 
 export default renderChat; 
