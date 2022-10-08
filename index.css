@@ -56,3 +56,36 @@ p{
     overflow:scroll;
     height: 424px;
 }
+.vanilla-chatbot-kit-chat-input-container{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+}
+.vanilla-chatbot-kit-chat-input{
+    width: 100%;
+    padding: 12.5px;
+    border: none;
+    font-size: 0.85rem;
+    border-top:1px solid #d8d8d8;
+    border-bottom-left-radius: 5px;
+}
+.vanilla-chatbot-kit-chat-input-form{
+    width: 100%;
+    display:flex;
+}
+.vanilla-chatbot-kit-chat-input::placeholder{
+    color: #585858;
+}
+.vanilla-chatbot-kit-chat-btn-send{
+    color: #fff;
+    background: #2898ec;
+    border:none;
+    border-bottom-right-radius: 5px;
+}
+.vanilla-chatbot-kit-chat-btn-send-icon{
+    fill: #fff;
+    width: 15px;
+}
+
+

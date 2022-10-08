@@ -26,4 +26,21 @@ const createMessageContainer = () =>{
     return container;
 }
 
+const createForm = () => {
+    const container = document.createElement("div")
+    container.classList.add("vanilla-chatbot-kit-chat-input-container")
+
+    const form = document.createElement("form")
+    form.classList.add("vanilla-chatbot-kit-chat-input-form");
+    
+    const input = document.createElement("input");
+    input.classList.add("vanilla-chatbot-kit-chat-input")
+    input.placeholder = "Write your message here";
+
+    const button = document.createElement("button");
+    button.classList.add("vanilla-chatbot-kit-chat-btn-send")
+
+    
+}
+
 export default renderChat; 
