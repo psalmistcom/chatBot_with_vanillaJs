@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    background: #1b2f47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+code{
+    font-family:source-code-pro, Menlo, monaco, consolas, "Courier New", monospace;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+p{
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    font-weight: normal;
+}
+.vanilla-chatbot-kit-chat-header{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #efefef;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #514f4f;
+    padding: 12.5px;
+    font-weight: bold;
+}
+.vanilla-chatbot-kit-chat-container{
+    position: relative;
+    width: 275px;
+}
+.vanilla-chatbot-kit-chat-inner-container{
+    height: 500px;
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom:15px;
+    border-radius: 5px;
+}
+.vanilla-chatbot-kit-chat-message-container{
+    padding: 0 17.5px 10px 17.5px;
+    overflow:scroll;
+    height: 424px;
+}
